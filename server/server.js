@@ -9,7 +9,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config()
+dotenv.config({ path: 'server/.env' })
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
